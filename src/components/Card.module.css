@@ -1,0 +1,55 @@
+/*The container of the whole card*/
+
+.mainContainer {
+  margin: 30px 0px 0px 36px;
+}
+
+.cardImage {
+  width: 190px;
+  height: 260px;
+  border-radius: 11px;
+}
+
+/*Container of the bottom portion of the image*/
+
+.reviewContainer {
+  display: flex;
+}
+
+/*The review portion. Star (6) USA */
+
+.numberOfReview {
+  font-size: smaller;
+}
+
+.spanNumberOfReview {
+  color: #95949b;
+}
+
+.dot {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.star {
+  margin: 1.2px 3px 0px -3px;
+  width: 14px;
+  height: 14px;
+}
+
+/*Description of card*/
+
+.description {
+  font-size: small;
+  margin: 0px 0px 3px 0px;
+}
+
+/*Price per person*/
+
+.price {
+  font-size: smaller;
+}
+
+.pricePortion {
+  font-weight: bold;
+}
