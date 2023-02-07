@@ -8,8 +8,8 @@ function App() {
     return (
       <Card
         img={info.coverImg}
-        rating={info.rating}
-        reviewCount={`(${info.reviewCount})`}
+        rating={info.stats.rating.toFixed(1)}
+        reviewCount={`(${info.stats.reviewCount})`}
         country={info.location}
         title={info.title}
         price={`$${info.price}`}
