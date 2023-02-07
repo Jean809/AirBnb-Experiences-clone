@@ -1,30 +1,34 @@
 import CardCSS from "./Card.module.css";
-import cardImage from "./images/katie-zaferes.png";
 import cardStar from "./images/star.png";
 
-function Card() {
+function Card(props) {
   return (
     <div>
       <div className={CardCSS.mainContainer}>
         <div>
           <img
             className={CardCSS.cardImage}
-            src={cardImage}
+            src={props.img}
             alt="Image of Katie Zaferes"
           ></img>
         </div>
         <div className={CardCSS.reviewContainer}>
           <img className={CardCSS.star} src={cardStar} alt="star review"></img>
           <p className={CardCSS.numberOfReview}>
-            5.0 <span className={CardCSS.spanNumberOfReview}>(6)•USA</span>
+            {props.rating}{" "}
+            <span className={CardCSS.spanNumberOfReview}>
+              {" "}
+              {props.reviewCount}•{props.country}
+            </span>
           </p>
         </div>
         <div>
-          <p className={CardCSS.description}>Life lessons with Katie Zaferes</p>
+          <p className={CardCSS.description}>{props.title}</p>
         </div>
         <div>
           <p className={CardCSS.price}>
-            <span className={CardCSS.pricePortion}>From $136</span> / person
+            <span className={CardCSS.pricePortion}>From {props.price}</span> /
+            person
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import HeroCSS from "./Hero.module.css";
-import photoGrid from "./images/photo-grid.png";
+import photoGrid from "./images//photo-grid.png";
 
 function Hero() {
   return (
