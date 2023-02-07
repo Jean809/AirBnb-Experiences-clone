@@ -1,4 +1,4 @@
-import airbnbLogo from "./images/Airbnb-logo.png";
+//import airbnbLogo from "/public/images/Airbnb-logo.png";
 import NavbarCSS from "./Navbar.module.css";
 
 function Navbar() {
@@ -7,8 +7,8 @@ function Navbar() {
       <div className={NavbarCSS.mainContainer}>
         <img
           className={NavbarCSS.airbnbLogo}
-          src={airbnbLogo}
-          alt={airbnbLogo}
+          src={"/images/Airbnb-logo.png"}
+          alt={"airbnb logo"}
         ></img>
       </div>
     </nav>

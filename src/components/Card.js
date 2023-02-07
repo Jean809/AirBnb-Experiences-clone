@@ -1,5 +1,5 @@
 import CardCSS from "./Card.module.css";
-import cardStar from "./images/star.png";
+//import cardStar from "/public/images/star";
 
 function Card(props) {
   return (
@@ -13,7 +13,11 @@ function Card(props) {
           ></img>
         </div>
         <div className={CardCSS.reviewContainer}>
-          <img className={CardCSS.star} src={cardStar} alt="star review"></img>
+          <img
+            className={CardCSS.star}
+            src={"/images/star.png"}
+            alt="star review"
+          ></img>
           <p className={CardCSS.numberOfReview}>
             {props.rating}{" "}
             <span className={CardCSS.spanNumberOfReview}>

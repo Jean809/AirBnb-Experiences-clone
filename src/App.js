@@ -2,13 +2,12 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
 import data from "./components/data.js";
-import katieIMG from "./components/images/katie-zaferes.png";
 
 function App() {
   const cardElements = data.map((info) => {
     return (
       <Card
-        img={katieIMG}
+        img={info.coverImg}
         rating={info.rating}
         reviewCount={`(${info.reviewCount})`}
         country={info.location}

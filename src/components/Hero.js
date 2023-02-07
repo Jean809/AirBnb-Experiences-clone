@@ -1,12 +1,15 @@
 import HeroCSS from "./Hero.module.css";
-import photoGrid from "./images//photo-grid.png";
+//import photoGrid from "/public/images/photo-grid.png";
 
 function Hero() {
   return (
     <div>
       <div className={HeroCSS.mainContainer}>
         <div className={HeroCSS.photoGridContainer}>
-          <img className={HeroCSS.photoGrid} src={photoGrid}></img>
+          <img
+            className={HeroCSS.photoGrid}
+            src={"/images/photo-grid.png"}
+          ></img>
         </div>
         <h1>Online Experiences</h1>
         <p>
