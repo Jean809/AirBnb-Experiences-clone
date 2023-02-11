@@ -12,13 +12,16 @@ function Card(props) {
   return (
     <div>
       <div className={CardCSS.mainContainer}>
-        {badgeText === "SOLD OUT" && (
-          <div className={CardCSS.cardBadgeSold}>{badgeText}</div>
-        )}
-        {badgeText === "ONLINE" && (
-          <div className={CardCSS.cardBadgeOnline}>{badgeText}</div>
-        )}
         <div>
+          <div className={CardCSS.badgeContainer}>
+            {badgeText === "SOLD OUT" && (
+              <div className={CardCSS.cardBadgeSold}>{badgeText}</div>
+            )}
+            {badgeText === "ONLINE" && (
+              <div className={CardCSS.cardBadgeOnline}>{badgeText}</div>
+            )}
+          </div>
+
           <img
             className={CardCSS.cardImage}
             src={props.img}
