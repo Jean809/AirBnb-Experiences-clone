@@ -7,6 +7,7 @@ function App() {
   const card = data.map((info) => {
     return (
       <Card
+        key={info.id}
         img={info.coverImg}
         rating={info.stats.rating.toFixed(1)}
         reviewCount={`(${info.stats.reviewCount})`}
@@ -32,7 +33,7 @@ function App() {
           price={`$${136}`}
         /> */}
       </div>
-      <div className="card-elements">{card}</div>
+      <div className="card-container">{card}</div>
     </div>
   );
 }
