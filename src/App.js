@@ -8,6 +8,8 @@ function App() {
     return (
       <Card
         key={info.id}
+        openSpots={info.openSpots}
+        location={info.location}
         img={info.coverImg}
         rating={info.stats.rating.toFixed(1)}
         reviewCount={`(${info.stats.reviewCount})`}

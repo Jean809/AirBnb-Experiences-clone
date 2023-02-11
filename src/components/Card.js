@@ -2,9 +2,22 @@ import CardCSS from "./Card.module.css";
 //import cardStar from "/public/images/star";
 
 function Card(props) {
+  let badgeText;
+  if (props.openSpots === 0) {
+    badgeText = "SOLD OUT";
+  } else if (props.location === "Online") {
+    badgeText = "ONLINE";
+  }
+
   return (
     <div>
       <div className={CardCSS.mainContainer}>
+        {badgeText === "SOLD OUT" && (
+          <div className={CardCSS.cardBadgeSold}>{badgeText}</div>
+        )}
+        {badgeText === "ONLINE" && (
+          <div className={CardCSS.cardBadgeOnline}>{badgeText}</div>
+        )}
         <div>
           <img
             className={CardCSS.cardImage}

@@ -10,6 +10,29 @@
   border-radius: 11px;
 }
 
+/*Sold out or not*/
+
+.cardBadgeSold {
+  position: absolute;
+  top: 39rem;
+  left: 45px;
+  font-size: 12px;
+  background-color: white;
+  width: 4.4rem;
+  padding: 0px 0px 0px 6px;
+  border-radius: 3px;
+}
+.cardBadgeOnline {
+  position: absolute;
+  top: 39rem;
+  margin-left: 8px;
+  font-size: 12px;
+  background-color: white;
+  width: 3.4rem;
+  padding: 0px 0px 0px 6px;
+  border-radius: 3px;
+}
+
 /*Container of the bottom portion of the image*/
 
 .reviewContainer {
