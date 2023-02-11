@@ -4,7 +4,7 @@ import Card from "./components/Card";
 import data from "./components/data.js";
 
 function App() {
-  const cardElements = data.map((info) => {
+  const card = data.map((info) => {
     return (
       <Card
         img={info.coverImg}
@@ -31,8 +31,8 @@ function App() {
           title="Life Lessons with Katie Zaferes"
           price={`$${136}`}
         /> */}
-        {cardElements}
       </div>
+      <div className="card-elements">{card}</div>
     </div>
   );
 }
