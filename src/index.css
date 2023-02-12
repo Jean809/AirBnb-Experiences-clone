@@ -14,6 +14,12 @@ footer {
   margin: 5rem 0rem 0rem 50rem;
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 670px) and (orientation: landscape) {
+  footer {
+    margin: 5rem 0rem 0rem 16rem;
+  }
+}
+
 @media only screen and (max-width: 640px) and (orientation: portrait) {
   .card-container {
     width: 23rem;
