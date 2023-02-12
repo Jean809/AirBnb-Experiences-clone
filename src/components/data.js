@@ -12,6 +12,7 @@ export default [
     },
     location: "Online",
     openSpots: 0,
+    link: "https://www.airbnb.com/experiences/2671118",
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ export default [
     },
     location: "Online",
     openSpots: 27,
+    link: "https://www.airbnb.com/experiences/1157900",
   },
   {
     id: 3,
@@ -40,6 +42,7 @@ export default [
     },
     location: "Norway",
     openSpots: 3,
+    link: "https://www.airbnb.com/experiences/2299931",
   },
   {
     id: 4,
@@ -53,6 +56,7 @@ export default [
     },
     location: "Online",
     openSpots: 10,
+    link: "https://www.airbnb.com/experiences/1674019",
   },
   {
     id: 5,
@@ -66,6 +70,7 @@ export default [
     },
     location: "Mexico",
     openSpots: 12,
+    link: "https://www.airbnb.com/experiences/1671671",
   },
   {
     id: 6,
@@ -79,6 +84,7 @@ export default [
     },
     location: "Online",
     openSpots: 23,
+    link: "https://www.airbnb.com/experiences/1661135",
   },
   {
     id: 7,
@@ -92,6 +98,7 @@ export default [
     },
     location: "New Zealand",
     openSpots: 0,
+    link: "https://www.airbnb.com/experiences/2855564",
   },
   {
     id: 8,
@@ -105,5 +112,6 @@ export default [
     },
     location: "United Kingdom",
     openSpots: 18,
+    link: "https://www.airbnb.com/experiences/1653761",
   },
 ];

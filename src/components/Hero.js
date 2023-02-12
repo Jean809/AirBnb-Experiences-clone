@@ -11,8 +11,8 @@ function Hero() {
             src={"/images/photo-grid.png"}
           ></img>
         </div>
-        <h1>Online Experiences</h1>
-        <p>
+        <h1 className={HeroCSS.title}>Online Experiences</h1>
+        <p className={HeroCSS.paragraph}>
           Join unique interactive activities led by one-of-a-kind hosts—all
           without leaving home.
         </p>

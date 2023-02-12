@@ -8,6 +8,7 @@ function App() {
     return (
       <Card
         key={info.id}
+        link={info.link}
         openSpots={info.openSpots}
         location={info.location}
         img={info.coverImg}
@@ -36,6 +37,7 @@ function App() {
         /> */}
       </div>
       <div className="card-container">{card}</div>
+      <footer>© 2023 Airbnb, Inc.</footer>
     </div>
   );
 }

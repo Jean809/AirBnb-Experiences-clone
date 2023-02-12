@@ -22,11 +22,13 @@ function Card(props) {
             )}
           </div>
 
-          <img
-            className={CardCSS.cardImage}
-            src={props.img}
-            alt="Image of Katie Zaferes"
-          ></img>
+          <a href={props.link}>
+            <img
+              className={CardCSS.cardImage}
+              src={props.img}
+              alt="Image of Katie Zaferes"
+            ></img>
+          </a>
         </div>
         <div className={CardCSS.reviewContainer}>
           <img
