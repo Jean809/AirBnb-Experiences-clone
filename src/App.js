@@ -8,6 +8,9 @@ function App() {
     return (
       <Card
         key={info.id}
+        info={info}
+        //Commented code below is to give a perspective of how it looks without simplifying for understanding purposes
+        /*
         link={info.link}
         openSpots={info.openSpots}
         location={info.location}
@@ -16,7 +19,7 @@ function App() {
         reviewCount={`(${info.stats.reviewCount})`}
         country={info.location}
         title={info.title}
-        price={`$${info.price}`}
+        price={`$${info.price}`}*/
       />
     );
   });

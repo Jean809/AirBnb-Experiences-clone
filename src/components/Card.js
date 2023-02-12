@@ -1,11 +1,12 @@
 import CardCSS from "./Card.module.css";
+
 //import cardStar from "/public/images/star";
 
 function Card(props) {
   let badgeText;
-  if (props.openSpots === 0) {
+  if (props.info.openSpots === 0) {
     badgeText = "SOLD OUT";
-  } else if (props.location === "Online") {
+  } else if (props.info.location === "Online") {
     badgeText = "ONLINE";
   }
 
@@ -22,10 +23,10 @@ function Card(props) {
             )}
           </div>
 
-          <a href={props.link}>
+          <a href={props.info.link}>
             <img
               className={CardCSS.cardImage}
-              src={props.img}
+              src={props.info.coverImg}
               alt="Image of Katie Zaferes"
             ></img>
           </a>
@@ -37,20 +38,22 @@ function Card(props) {
             alt="star review"
           ></img>
           <p className={CardCSS.numberOfReview}>
-            {props.rating}{" "}
+            {props.info.stats.rating.toFixed(1)}{" "}
             <span className={CardCSS.spanNumberOfReview}>
               {" "}
-              {props.reviewCount}•{props.country}
+              {props.info.stats.reviewCount}•{props.info.location}
             </span>
           </p>
         </div>
         <div>
-          <p className={CardCSS.description}>{props.title}</p>
+          <p className={CardCSS.description}>{props.info.title}</p>
         </div>
         <div>
           <p className={CardCSS.price}>
-            <span className={CardCSS.pricePortion}>From {props.price}</span> /
-            person
+            <span className={CardCSS.pricePortion}>
+              From {`$${props.info.price}`}
+            </span>{" "}
+            / person
           </p>
         </div>
       </div>

@@ -22,7 +22,7 @@ export default [
     price: 125,
     coverImg: "/images/wedding-photography.png",
     stats: {
-      rating: 5.0,
+      rating: 4.9,
       reviewCount: 30,
     },
     location: "Online",
